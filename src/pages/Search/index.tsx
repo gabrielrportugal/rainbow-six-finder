@@ -1,9 +1,19 @@
 import React from 'react';
 
-import { Container } from './styles';
+import { Container, Background, Content } from './styles';
+import Header from '../../components/Header';
 
 const Search: React.FC = () => {
-  return <Container>Search</Container>;
+  return (
+    <>
+      <Header />
+      <Background>
+        <Container>
+          <div>Teste</div>
+        </Container>
+      </Background>
+    </>
+  );
 };
 
 export default Search;
